@@ -1,6 +1,6 @@
 # Machine Learning Algorithms
 
-A collection of Machine Learning algorithms implemented using **Python**, **Scikit-learn**, and **TensorFlow/Keras**. This repository is organized into **Supervised** and **Unsupervised** learning algorithms with practical implementations on real-world datasets.
+A collection of Machine Learning algorithms implemented using **Python**, **Scikit-learn**, and **TensorFlow/Keras**. This repository is organized into **Supervised** and **Unsupervised** Machine Learning algorithms with practical implementations on real-world datasets.
 
 ---
 
@@ -20,7 +20,8 @@ Machine-Learning-Algorithms/
 │   └── naive_bayes.ipynb
 │
 ├── Unsupervised/
-│   └── kmeans.ipynb
+│   ├── kmeans.ipynb
+│   └── pca.ipynb
 │
 ├── datasets/
 │   ├── heart.csv
@@ -47,6 +48,7 @@ Machine-Learning-Algorithms/
 ## Unsupervised Learning
 
 - K-Means Clustering
+- Principal Component Analysis (PCA)
 
 ---
 
@@ -57,12 +59,13 @@ Machine-Learning-Algorithms/
 Used for:
 
 - Logistic Regression
-- K-Nearest Neighbors (KNN)
+- KNN
 - Decision Tree
 - Random Forest
-- Artificial Neural Network (ANN)
-- Support Vector Machine (SVM)
+- ANN
+- SVM
 - Naive Bayes
+- PCA + Logistic Regression
 
 ### Students Dataset
 
@@ -80,12 +83,14 @@ Used for:
 - Scikit-learn
 - TensorFlow / Keras
 - Jupyter Notebook
+- Git
+- GitHub
 
 ---
 
 # Machine Learning Workflow
 
-Most supervised learning algorithms follow this workflow:
+Most supervised learning projects follow this workflow:
 
 1. Import Libraries
 2. Load Dataset
@@ -97,25 +102,36 @@ Most supervised learning algorithms follow this workflow:
 8. Make Predictions
 9. Evaluate Performance
 
+For PCA:
+
+1. Import Libraries
+2. Load Dataset
+3. Train-Test Split
+4. Feature Scaling
+5. Apply PCA
+6. Train Classification Model
+7. Evaluate Performance
+
 ---
 
-# Algorithm Comparison
+# Algorithms Overview
 
 | Algorithm | Type | Main Idea |
-|----------|------|-----------|
+|-----------|------|-----------|
 | Linear Regression | Supervised | Predict continuous values using the best-fit line |
 | Logistic Regression | Supervised | Binary classification using the Sigmoid function |
 | KNN | Supervised | Predict using nearest neighbors |
 | Decision Tree | Supervised | Learn decision rules by splitting data |
-| Random Forest | Supervised | Ensemble of Decision Trees using voting |
+| Random Forest | Supervised | Combine multiple Decision Trees using voting |
 | ANN | Supervised | Learn complex patterns using artificial neurons |
 | SVM | Supervised | Find the optimal hyperplane with maximum margin |
-| Naive Bayes | Supervised | Predict the class with the highest probability |
+| Naive Bayes | Supervised | Predict using Bayes' Theorem and probability |
 | K-Means | Unsupervised | Group similar data into clusters |
+| PCA | Unsupervised | Reduce dimensions while preserving maximum variance |
 
 ---
 
-# Model Performance (Heart Disease Dataset)
+# Model Performance
 
 | Algorithm | Accuracy |
 |-----------|---------:|
@@ -126,8 +142,11 @@ Most supervised learning algorithms follow this workflow:
 | ANN | **78.05%** |
 | SVM | **81.46%** |
 | Naive Bayes | **75.12%** |
+| PCA + Logistic Regression | **77.56%** |
 
-> **Note:** The Random Forest result of **100%** should be interpreted carefully. Such a perfect score may indicate that the dataset, selected features, or evaluation setup makes the task unusually easy, or there may be data leakage. In real-world machine learning, it is important to verify unexpectedly perfect performance.
+> **Note:** PCA reduces the number of features before classification. It improves efficiency by reducing dimensionality, although some predictive information may be lost.
+
+> **Note:** The Random Forest result of **100%** should be interpreted carefully. In practice, an unusually high score should always be checked to ensure there is no data leakage or evaluation issue.
 
 ---
 
@@ -137,6 +156,7 @@ Models are evaluated using:
 
 - Accuracy Score
 - Confusion Matrix
+- Explained Variance Ratio (PCA)
 - Training Accuracy (ANN)
 - Testing Accuracy (ANN)
 - Loss Function (ANN)
@@ -145,18 +165,18 @@ Models are evaluated using:
 
 # Learning Objectives
 
-This repository documents my Machine Learning learning journey. The goal is to understand both the **theory** and **implementation** of classical Machine Learning algorithms through practical coding, experimentation, and evaluation.
+This repository documents my Machine Learning learning journey. The objective is to understand the intuition, implementation, and practical application of classical Machine Learning algorithms through coding, experimentation, and evaluation.
 
 ---
 
 # Future Additions
 
-- Principal Component Analysis (PCA)
+- Cross Validation
+- Hyperparameter Tuning
 - XGBoost
 - AdaBoost
 - Gradient Boosting
-- Cross Validation
-- Hyperparameter Tuning
+- Principal Component Analysis (Advanced)
 - Feature Engineering
 - Model Deployment using Flask / Streamlit
 
