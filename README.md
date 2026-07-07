@@ -163,8 +163,8 @@ Advanced evaluation techniques include:
 
 | Algorithm | Accuracy |
 |-----------|---------:|
-| Logistic Regression | *(Update with your result)* |
-| KNN | *(Update with your result)* |
+| Logistic Regression | **75.12%** |
+| KNN | **87.8%** |
 | Decision Tree | **78.54%** |
 | Random Forest | **100.00%*** |
 | ANN | **78.05%** |
