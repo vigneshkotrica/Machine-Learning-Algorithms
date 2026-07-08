@@ -11,6 +11,7 @@ A collection of Machine Learning algorithms implemented using **Python**, **Scik
 - ✅ Supervised & Unsupervised Learning
 - ✅ Real-world datasets
 - ✅ Performance comparison
+- ✅ Model evaluation metrics
 - ✅ Built using Scikit-learn and TensorFlow/Keras
 - ✅ Beginner-friendly Jupyter Notebooks
 
@@ -38,7 +39,8 @@ Machine-Learning-Algorithms/
 ├── Advanced-Concepts/
 │   ├── cross_validation.ipynb
 │   ├── grid_search_cv.ipynb
-│   └── randomized_search_cv.ipynb
+│   ├── randomized_search_cv.ipynb
+│   └── model_evaluation.ipynb
 │
 ├── datasets/
 │   ├── heart.csv
@@ -72,8 +74,17 @@ Machine-Learning-Algorithms/
 # Advanced Machine Learning Concepts
 
 - Cross Validation
+- Stratified K-Fold
 - GridSearchCV
 - RandomizedSearchCV
+- Model Evaluation
+  - Confusion Matrix
+  - Precision
+  - Recall
+  - F1-Score
+  - Classification Report
+  - ROC Curve
+  - AUC Score
 
 ---
 
@@ -94,6 +105,7 @@ Used for:
 - Cross Validation
 - GridSearchCV
 - RandomizedSearchCV
+- Model Evaluation
 
 ### Students Dataset
 
@@ -110,6 +122,7 @@ Used for:
 - NumPy
 - Scikit-learn
 - TensorFlow / Keras
+- Matplotlib
 - Jupyter Notebook
 - Git
 - GitHub
@@ -130,10 +143,21 @@ Most supervised learning projects follow this workflow:
 8. Make Predictions
 9. Evaluate Performance
 
-Advanced evaluation techniques include:
+Model evaluation techniques include:
+
+- Accuracy
+- Confusion Matrix
+- Precision
+- Recall
+- F1-Score
+- Classification Report
+- ROC Curve
+- AUC Score
+
+Model improvement techniques include:
 
 - Cross Validation
-- Hyperparameter Tuning
+- Stratified K-Fold
 - GridSearchCV
 - RandomizedSearchCV
 
@@ -142,7 +166,7 @@ Advanced evaluation techniques include:
 # Algorithms & Concepts Overview
 
 | Algorithm / Concept | Category | Purpose |
-|---------------------|----------|---------|
+|----------------------|----------|---------|
 | Linear Regression | Supervised | Predict continuous values |
 | Logistic Regression | Supervised | Binary classification |
 | KNN | Supervised | Classification using nearest neighbors |
@@ -154,8 +178,10 @@ Advanced evaluation techniques include:
 | K-Means | Unsupervised | Cluster similar data |
 | PCA | Unsupervised | Reduce dimensions |
 | Cross Validation | Evaluation | Reliable model evaluation |
-| GridSearchCV | Hyperparameter Tuning | Finds the best hyperparameters by testing every combination |
-| RandomizedSearchCV | Hyperparameter Tuning | Finds good hyperparameters by testing random combinations |
+| Stratified K-Fold | Evaluation | Balanced cross validation for classification |
+| GridSearchCV | Hyperparameter Tuning | Tests every hyperparameter combination |
+| RandomizedSearchCV | Hyperparameter Tuning | Tests random hyperparameter combinations |
+| Model Evaluation | Evaluation | Measures classification performance |
 
 ---
 
@@ -163,8 +189,8 @@ Advanced evaluation techniques include:
 
 | Algorithm | Accuracy |
 |-----------|---------:|
-| Logistic Regression | **75.12%** |
-| KNN | **87.8%** |
+| Logistic Regression | *(Update with your result)* |
+| KNN | *(Update with your result)* |
 | Decision Tree | **78.54%** |
 | Random Forest | **100.00%*** |
 | ANN | **78.05%** |
@@ -172,26 +198,26 @@ Advanced evaluation techniques include:
 | Naive Bayes | **75.12%** |
 | PCA + Logistic Regression | **77.56%** |
 
-> **Note:** PCA reduces dimensionality before classification. It improves efficiency while preserving most of the important information.
+> **Note:** PCA reduces dimensionality while preserving most of the important information.
 
-> **Note:** Hyperparameter tuning may improve model performance depending on the selected search space and dataset.
+> **Note:** Hyperparameter tuning can improve model performance depending on the selected search space.
 
-> **Note:** The Random Forest result of **100%** should always be verified to rule out data leakage or evaluation issues.
+> **Note:** Random Forest accuracy should always be verified to ensure there is no data leakage or overfitting.
 
 ---
 
-# Evaluation Metrics
-
-Models are evaluated using:
+# Evaluation Metrics Implemented
 
 - Accuracy Score
 - Confusion Matrix
-- Explained Variance Ratio (PCA)
+- Precision
+- Recall
+- F1-Score
+- Classification Report
+- ROC Curve
+- AUC Score
 - Cross Validation Score
-- Best Hyperparameters
-- Training Accuracy (ANN)
-- Testing Accuracy (ANN)
-- Loss Function (ANN)
+- Explained Variance Ratio (PCA)
 
 ---
 
@@ -203,15 +229,6 @@ This repository documents my Machine Learning learning journey. The goal is to u
 
 # Future Additions
 
-## Phase 2
-
-- Precision
-- Recall
-- F1-Score
-- ROC Curve
-- AUC
-- Classification Report
-
 ## Phase 3
 
 - XGBoost
@@ -221,10 +238,11 @@ This repository documents my Machine Learning learning journey. The goal is to u
 ## Phase 4
 
 - PCA Advanced
-- Covariance
-- Eigenvectors
-- Eigenvalues
-- Scree Plot
+  - Covariance
+  - Covariance Matrix
+  - Eigenvectors
+  - Eigenvalues
+  - Scree Plot
 
 ## Phase 5
 
