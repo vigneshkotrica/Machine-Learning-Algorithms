@@ -6,7 +6,7 @@ A collection of Machine Learning algorithms implemented using **Python**, **Scik
 
 # Repository Highlights
 
-- ✅ 10 Machine Learning algorithms implemented
+- ✅ 11 Machine Learning algorithms implemented
 - ✅ Advanced Machine Learning concepts
 - ✅ Supervised & Unsupervised Learning
 - ✅ Real-world datasets
@@ -30,7 +30,8 @@ Machine-Learning-Algorithms/
 │   ├── random_forest.ipynb
 │   ├── ann.ipynb
 │   ├── svm.ipynb
-│   └── naive_bayes.ipynb
+│   ├── naive_bayes.ipynb
+│   └── xgboost.ipynb
 │
 ├── Unsupervised/
 │   ├── kmeans.ipynb
@@ -63,6 +64,7 @@ Machine-Learning-Algorithms/
 - Artificial Neural Network (ANN)
 - Support Vector Machine (SVM)
 - Naive Bayes
+- XGBoost
 
 ## Unsupervised Learning
 
@@ -101,6 +103,7 @@ Used for:
 - ANN
 - SVM
 - Naive Bayes
+- XGBoost
 - PCA + Logistic Regression
 - Cross Validation
 - GridSearchCV
@@ -121,6 +124,7 @@ Used for:
 - Pandas
 - NumPy
 - Scikit-learn
+- XGBoost
 - TensorFlow / Keras
 - Matplotlib
 - Jupyter Notebook
@@ -175,6 +179,7 @@ Model improvement techniques include:
 | ANN | Supervised | Learn complex patterns |
 | SVM | Supervised | Maximum-margin classification |
 | Naive Bayes | Supervised | Probability-based classification |
+| XGBoost | Supervised | Boosting-based classification |
 | K-Means | Unsupervised | Cluster similar data |
 | PCA | Unsupervised | Reduce dimensions |
 | Cross Validation | Evaluation | Reliable model evaluation |
@@ -189,14 +194,15 @@ Model improvement techniques include:
 
 | Algorithm | Accuracy |
 |-----------|---------:|
-| Logistic Regression | **75.15** |
-| KNN | **87.8%** |
+| Logistic Regression | **75.12%** |
+| KNN | **87.80%** |
 | Decision Tree | **78.54%** |
 | Random Forest | **100.00%*** |
 | ANN | **78.05%** |
 | SVM | **81.46%** |
 | Naive Bayes | **75.12%** |
 | PCA + Logistic Regression | **77.56%** |
+| XGBoost | **91.71%** |
 
 > **Note:** PCA reduces dimensionality while preserving most of the important information.
 
@@ -231,7 +237,6 @@ This repository documents my Machine Learning learning journey. The goal is to u
 
 ## Phase 3
 
-- XGBoost
 - AdaBoost
 - Gradient Boosting
 
