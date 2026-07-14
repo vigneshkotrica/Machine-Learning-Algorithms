@@ -1,18 +1,18 @@
 # Machine Learning Algorithms
 
-A collection of Machine Learning algorithms implemented using **Python**, **Scikit-learn**, and **TensorFlow/Keras**. This repository covers **Supervised Learning**, **Unsupervised Learning**, and **Advanced Machine Learning Concepts** through practical implementations on real-world datasets.
+A collection of Machine Learning algorithms implemented using **Python**, **Scikit-learn**, **XGBoost**, and **TensorFlow/Keras**. This repository covers **Supervised Learning**, **Unsupervised Learning**, and **Advanced Machine Learning Concepts** through practical implementations on real-world datasets.
 
 ---
 
 # Repository Highlights
 
-- ✅ 11 Machine Learning algorithms implemented
+- ✅ 12 Machine Learning algorithms implemented
 - ✅ Advanced Machine Learning concepts
 - ✅ Supervised & Unsupervised Learning
 - ✅ Real-world datasets
 - ✅ Performance comparison
 - ✅ Model evaluation metrics
-- ✅ Built using Scikit-learn and TensorFlow/Keras
+- ✅ Hyperparameter tuning
 - ✅ Beginner-friendly Jupyter Notebooks
 
 ---
@@ -31,7 +31,8 @@ Machine-Learning-Algorithms/
 │   ├── ann.ipynb
 │   ├── svm.ipynb
 │   ├── naive_bayes.ipynb
-│   └── xgboost.ipynb
+│   ├── xgboost.ipynb
+│   └── adaboost.ipynb
 │
 ├── Unsupervised/
 │   ├── kmeans.ipynb
@@ -65,6 +66,7 @@ Machine-Learning-Algorithms/
 - Support Vector Machine (SVM)
 - Naive Bayes
 - XGBoost
+- AdaBoost
 
 ## Unsupervised Learning
 
@@ -104,6 +106,7 @@ Used for:
 - SVM
 - Naive Bayes
 - XGBoost
+- AdaBoost
 - PCA + Logistic Regression
 - Cross Validation
 - GridSearchCV
@@ -179,7 +182,8 @@ Model improvement techniques include:
 | ANN | Supervised | Learn complex patterns |
 | SVM | Supervised | Maximum-margin classification |
 | Naive Bayes | Supervised | Probability-based classification |
-| XGBoost | Supervised | Boosting-based classification |
+| XGBoost | Supervised | Gradient boosting classification |
+| AdaBoost | Supervised | Adaptive boosting classification |
 | K-Means | Unsupervised | Cluster similar data |
 | PCA | Unsupervised | Reduce dimensions |
 | Cross Validation | Evaluation | Reliable model evaluation |
@@ -201,6 +205,7 @@ Model improvement techniques include:
 | ANN | **78.05%** |
 | SVM | **81.46%** |
 | Naive Bayes | **75.12%** |
+| AdaBoost | **75.61%** |
 | PCA + Logistic Regression | **77.56%** |
 | XGBoost | **91.71%** |
 
@@ -237,7 +242,6 @@ This repository documents my Machine Learning learning journey. The goal is to u
 
 ## Phase 3
 
-- AdaBoost
 - Gradient Boosting
 
 ## Phase 4
