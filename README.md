@@ -6,7 +6,7 @@ A collection of Machine Learning algorithms implemented using **Python**, **Scik
 
 # Repository Highlights
 
-- ✅ 12 Machine Learning algorithms implemented
+- ✅ 13 Machine Learning algorithms implemented
 - ✅ Advanced Machine Learning concepts
 - ✅ Supervised & Unsupervised Learning
 - ✅ Real-world datasets
@@ -32,7 +32,8 @@ Machine-Learning-Algorithms/
 │   ├── svm.ipynb
 │   ├── naive_bayes.ipynb
 │   ├── xgboost.ipynb
-│   └── adaboost.ipynb
+│   ├── adaboost.ipynb
+│   └── gradient_boosting.ipynb
 │
 ├── Unsupervised/
 │   ├── kmeans.ipynb
@@ -67,6 +68,7 @@ Machine-Learning-Algorithms/
 - Naive Bayes
 - XGBoost
 - AdaBoost
+- Gradient Boosting
 
 ## Unsupervised Learning
 
@@ -107,6 +109,7 @@ Used for:
 - Naive Bayes
 - XGBoost
 - AdaBoost
+- Gradient Boosting
 - PCA + Logistic Regression
 - Cross Validation
 - GridSearchCV
@@ -182,8 +185,9 @@ Model improvement techniques include:
 | ANN | Supervised | Learn complex patterns |
 | SVM | Supervised | Maximum-margin classification |
 | Naive Bayes | Supervised | Probability-based classification |
-| XGBoost | Supervised | Gradient boosting classification |
 | AdaBoost | Supervised | Adaptive boosting classification |
+| Gradient Boosting | Supervised | Residual-based boosting classification |
+| XGBoost | Supervised | Optimized gradient boosting |
 | K-Means | Unsupervised | Cluster similar data |
 | PCA | Unsupervised | Reduce dimensions |
 | Cross Validation | Evaluation | Reliable model evaluation |
@@ -208,6 +212,7 @@ Model improvement techniques include:
 | AdaBoost | **75.61%** |
 | PCA + Logistic Regression | **77.56%** |
 | XGBoost | **91.71%** |
+| Gradient Boosting | **94.15%** |
 
 > **Note:** PCA reduces dimensionality while preserving most of the important information.
 
@@ -239,10 +244,6 @@ This repository documents my Machine Learning learning journey. The goal is to u
 ---
 
 # Future Additions
-
-## Phase 3
-
-- Gradient Boosting
 
 ## Phase 4
 
